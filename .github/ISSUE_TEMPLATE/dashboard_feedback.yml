@@ -2,7 +2,6 @@ name: YGPT Dashboard Feedback
 description: Collect structured feedback on the new dashboard
 title: "[Dashboard Feedback]: "
 labels: ["feedback"]
-assignees: []
 
 body:
 
@@ -28,7 +27,7 @@ body:
         - Regional Coordinator
         - Events Team
         - Leadership
-        - Finance & Accounts
+        - "Finance & Accounts"
         - Other
     validations:
       required: true
@@ -62,8 +61,6 @@ body:
     attributes:
       label: What worked well?
       placeholder: What did you like or find useful?
-    validations:
-      required: false
 
   - type: textarea
     id: issues
@@ -71,8 +68,6 @@ body:
       label: What did not work well?
       description: Bugs, confusion, missing features
       placeholder: Be specific
-    validations:
-      required: false
 
   - type: dropdown
     id: usability_rating
@@ -104,8 +99,6 @@ body:
     attributes:
       label: Suggestions
       placeholder: What would make this better?
-    validations:
-      required: false
 
   - type: textarea
     id: screenshots
@@ -119,4 +112,3 @@ body:
       label: Follow-up
       options:
         - label: I am open to a follow-up discussion
-          required: false
