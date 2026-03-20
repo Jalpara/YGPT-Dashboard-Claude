@@ -1,86 +1,53 @@
 name: YGPT Dashboard Feedback
-description: Collect structured feedback on the new dashboard
+description: Collect structured feedback
 title: "[Dashboard Feedback]: "
-labels: ["feedback"]
 
 body:
-
-  - type: markdown
-    attributes:
-      value: |
-        ## YGPT Dashboard Feedback
-        Please share your experience with the new dashboard.
-
   - type: input
-    id: stakeholder_name
+    id: name
     attributes:
       label: Name
-      placeholder: Your name
     validations:
       required: true
 
   - type: dropdown
-    id: stakeholder_role
+    id: role
     attributes:
-      label: Your Role
+      label: Role
       options:
         - Regional Coordinator
         - Events Team
         - Leadership
-        - "Finance & Accounts"
         - Other
     validations:
       required: true
 
   - type: textarea
-    id: usage_context
+    id: usage
     attributes:
       label: What were you trying to do?
-      description: Describe the task or goal you had while using the dashboard
-      placeholder: Example: Checking analytics, managing users
+      placeholder: Describe your task
     validations:
       required: true
 
   - type: dropdown
-    id: feedback_type
+    id: type
     attributes:
       label: Type of Feedback
-      description: Select the category that best fits
       options:
         - Bug
         - UI Issue
         - UX Issue
         - Feature Request
-        - Performance Issue
         - General Feedback
     validations:
       required: true
 
   - type: textarea
-    id: liked
-    attributes:
-      label: What worked well?
-      placeholder: What did you like or find useful?
-
-  - type: textarea
     id: issues
     attributes:
-      label: What did not work well?
-      description: Bugs, confusion, missing features
-      placeholder: Be specific
-
-  - type: dropdown
-    id: usability_rating
-    attributes:
-      label: Overall Usability
-      options:
-        - Excellent
-        - Good
-        - Average
-        - Poor
-        - Very Poor
-    validations:
-      required: true
+      label: Issues faced
+      placeholder: Describe problems
 
   - type: dropdown
     id: priority
@@ -90,25 +57,5 @@ body:
         - Low
         - Medium
         - High
-        - Critical
     validations:
       required: true
-
-  - type: textarea
-    id: suggestions
-    attributes:
-      label: Suggestions
-      placeholder: What would make this better?
-
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots or recordings
-      description: Drag and drop images if helpful
-
-  - type: checkboxes
-    id: followup
-    attributes:
-      label: Follow-up
-      options:
-        - label: I am open to a follow-up discussion
