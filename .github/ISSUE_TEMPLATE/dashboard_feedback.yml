@@ -22,14 +22,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: usage
-    attributes:
-      label: What were you trying to do?
-      placeholder: Describe your task
-    validations:
-      required: true
-
   - type: dropdown
     id: type
     attributes:
@@ -48,6 +40,14 @@ body:
     attributes:
       label: Issues faced
       placeholder: Describe problems
+
+  - type: textarea
+    id: usage
+    attributes:
+      label: What were you trying to do?
+      placeholder: Describe your task
+    validations:
+      required: false
 
   - type: dropdown
     id: priority
